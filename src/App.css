@@ -1,0 +1,67 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('../public/fonts/static/Inter-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Inter Light';
+  src: url('../public/fonts/static/Inter-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url('../public/fonts/static/PlayfairDisplay-Regular.ttf') format('truetype');
+}
+
+
+.flex {
+  display: flex;
+}
+
+.justify {
+  justify-content: space-between;
+}
+
+.item-center {
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.w-100 {
+  width: 95%;
+}
+
+.p-20 {
+  padding: 20px;
+}
+
+.ml-15 {
+  margin-left: 15px;
+}
+
+.mt-80 {
+  margin-top: 80px;
+}
+
+.relative {
+  position: relative;
+}
+
+.top-2 {
+  top: 5px;
+}
+
+.d-none {
+  display: none;
+}

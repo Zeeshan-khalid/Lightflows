@@ -1,0 +1,57 @@
+.home {
+    background-color: #F7F8FA;
+    padding: 103px 183px 177px;
+}
+
+.home h2 {
+    font-family: "Playfair Display";
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.home .main p {
+    max-width: 473px;
+    font-size: 15px;
+    font-family: 'Inter Light';
+    line-height: 23.6px;
+    color: #3B4758;
+    margin-left: 47px;
+}
+
+
+.home .main {
+    padding-left: 20px;
+}
+
+.home .vertical-line {
+    border-left: 2px solid #C5CCD6;
+    margin: 0 10px;
+    transform: rotate(90deg);
+    height: 72px;
+    position: relative;
+    top: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .home {
+        padding: 0 0px 177px;
+    }
+
+    .home h2 {
+        margin: 0;
+        padding: 48px 50px 0;
+    }
+
+    .home .main p {
+        margin: 0 32px 0 15px;
+    }
+
+    .home .mt-80 {
+        margin-top: 40px;
+    }
+
+
+    .home .vertical-line {
+        height: 30px;
+    }
+}

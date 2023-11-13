@@ -1,0 +1,167 @@
+.cards {
+    background: rgba(128, 128, 128, 0.361);
+    height: 70vh;
+    padding: 107px 190px;
+    margin-bottom: 545px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+    gap: 70px;
+    grid-template-rows: auto auto;
+    position: relative;
+    top: -400px;
+}
+
+.card {
+    position: relative;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+    max-width: 595px;
+}
+
+.card img {
+    width: 100%;
+    object-fit: cover;
+    border-bottom: 1px solid #ccc;
+}
+
+.card-content {
+    padding: 22px 30px;
+}
+
+.card-content .name {
+    color: #1C1C1C;
+    font-family: "Playfair Display";
+    font-size: 25px;
+    letter-spacing: 0;
+    line-height: 32px;
+}
+
+.card-content .location {
+    margin: 20px 0;
+    color: #718198;
+    font-family: Inter;
+    font-size: 17px;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 22px;
+}
+
+
+.card-container .engine {
+    color: #1C1C1C;
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: -0.33px;
+    line-height: 14px;
+}
+
+.card-container .gearbox {
+    color: #1C1C1C;
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: -0.33px;
+    line-height: 14px;
+    position: relative;
+    top: 4px;
+}
+
+.card-container .item {
+    display: flex;
+}
+
+.card-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #009688;
+}
+
+.card:nth-child(even) {
+    grid-row: span 1;
+    top: -80%;
+}
+
+.card:first-child {
+    grid-column: 2;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+
+.card-label {
+    background-color: #000;
+    color: #fff;
+    font-size: 12px;
+    padding: 7px;
+    font-family: "Playfair Display";
+}
+
+.contact-sales a {
+    color: #000000;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 17px;
+    text-align: center;
+    border: 1px solid #0000004f;
+    padding: 15px 30px;
+    cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card:first-child {
+        grid-column: 1;
+    }
+
+    .card-container .item {
+        display: block;
+    }
+
+    .card-container .gearbox {
+        margin-left: 0;
+    }
+
+    .card:nth-child(even) {
+        top: 0;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        top: -165px;
+    }
+
+    .w-100 {
+        width: 91%;
+    }
+
+    .cards {
+        padding: 20px;
+        height: 135vh;
+        margin-bottom: 200px;
+
+    }
+
+    .card-content .name {
+        font-size: 18px;
+    }
+
+    .card-content .location {
+        font-size: 14px;
+        margin: 7px 0;
+    }
+
+
+}

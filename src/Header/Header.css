@@ -1,0 +1,95 @@
+/* Header.css */
+.header {
+    background-color: #FFFFFF;
+    padding: 50px;
+}
+
+.header a {
+    font-family: Inter;
+    opacity: 0.8;
+    margin-left: 16px;
+}
+
+.header a.contact {
+    font-size: 14px;
+    letter-spacing: 0;
+    text-align: center;
+    padding: 15px 20px;
+    color: #AB8E66;
+    border: 1px solid #AB8E66;
+
+}
+
+.mobile {
+    display: none;
+}
+
+.mobile a {
+    display: block;
+    text-align: center;
+    margin: 0 0 25px 0;
+}
+
+.mobile a.contact {
+    font-size: 14px;
+    text-align: center;
+    padding: 15px 20px;
+    color: #AB8E66;
+    border: 1px solid #AB8E66;
+    margin: 0 auto;
+    width: 100px;
+}
+
+.hamburger-icon {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.nav-items.inactive {
+    display: none;
+}
+
+.nav-items {
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    left: 0;
+    background: #ffffff;
+    padding: 32px 0px;
+    z-index: 11;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: flex;
+        align-items: center;
+    }
+
+    .header {
+        padding: 25px;
+    }
+
+    .mobile a {
+        margin: 0;
+    }
+
+    .nav-items a {
+        margin: 0 0 25px 0;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .desktop {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+}

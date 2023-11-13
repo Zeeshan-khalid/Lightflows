@@ -1,0 +1,35 @@
+.like-icon {
+    background-color: white;
+    padding: 7px 8px;
+    border-radius: 50%;
+    font-size: 12px;
+    cursor: pointer;
+
+}
+
+.heart {
+    color: #A9B4C4;
+    position: relative;
+    top: 2px;
+    cursor: pointer;
+}
+
+.like-icon:hover {
+    color: #AB8E66;
+    /* Change heart color on hover */
+}
+
+.like-animation {
+    transition: transform 1s;
+    display: block;
+    position: absolute;
+    top: 22px;
+    background: transparent;
+    padding: 7px;
+    border-radius: 50%;
+    right: 21px;
+}
+
+.like-animation:hover {
+    transform: translateY(-500px) translateX(500px);
+}
